@@ -1,3 +1,4 @@
 [submodule "rpi-rgb-led-matrix"]
-	path = rpi-rgb-led-matrix
+	path = rpi_rgb_led_matrix
 	url = git@github.com:julesdehon/rpi-rgb-led-matrix.git
+	branch = v1.0.0
