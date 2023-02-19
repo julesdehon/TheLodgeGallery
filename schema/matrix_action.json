@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/MatrixAction",
+  "definitions": {
+      "MatrixAction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "action": {
+                  "enum": ["fill_colour"]
+              },
+              "fill_colour": {
+                  "$ref": "#/definitions/FillColour"
+              }
+          },
+          "required": [
+              "action"
+          ],
+          "title": "MatrixAction"
+      },
+      "FillColour": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "colour": {
+                  "type": "string"
+              }
+          },
+          "required": [
+              "colour"
+          ],
+          "title": "FillColour"
+      }
+  }
+}

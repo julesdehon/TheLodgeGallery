@@ -1,0 +1,4 @@
+{
+  "matrix_action_schema_file": "schema/matrix_action.json",
+  "matrix_response_schema_file": "schema/matrix_response.json"
+}

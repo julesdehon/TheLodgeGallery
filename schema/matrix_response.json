@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/MatrixResponse",
+  "definitions": {
+      "MatrixResponse": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "response": {
+                  "enum": ["ok", "error"]
+              },
+              "error": {
+                  "$ref": "#/definitions/Error"
+              }
+          },
+          "required": [
+              "response"
+          ],
+          "title": "MatrixResponse"
+      },
+      "Error": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "reason": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "reason"
+        ],
+        "title": "Error"
+      }
+  }
+}
